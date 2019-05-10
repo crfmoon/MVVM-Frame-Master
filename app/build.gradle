@@ -50,6 +50,8 @@ dependencies {
 
     implementation project(':baselibrary')
     debugImplementation project(':baselibrary')
-
+    
+   //title
+    api library.titlebar
 
 }

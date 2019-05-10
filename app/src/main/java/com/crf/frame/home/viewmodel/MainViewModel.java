@@ -1,5 +1,6 @@
 package com.crf.frame.home.viewmodel;
 
+import android.arch.lifecycle.ViewModel;
 import android.content.Context;
 import android.support.v4.app.FragmentActivity;
 import android.widget.RadioGroup;
@@ -12,14 +13,13 @@ import com.crf.frame.home.contract.FragmentController;
  * @description
  * @date 2019-05-08 09:40
  */
-public class MainViewModel {
+public class MainViewModel extends ViewModel {
     private Context context = null;
 
     public MainViewModel(Context context) {
         this.context = context;
         showTabs(0);
     }
-
 
     public RadioGroup.OnCheckedChangeListener onCheckedChanged() {
         return new RadioGroup.OnCheckedChangeListener() {
